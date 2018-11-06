@@ -7,23 +7,37 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<style>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+	<link rel="stylesheet" href="style.css">
+
+	<style>	
 		.header{
 			min-height: 100vh;
-			background-image: url(img/2.jpg);
+			background-image: url(img/home-bg.png);
 			background-size: cover;
 			background-position: center center;
 			background-attachment: fixed;
-		}
+		    }
 
-			.bg-cover{
+		.bg-cover{
 				background-size: cover;
 				background-position: center center;
 			}
+		.bg-attachment{
+			background-attachment: fixed;
+		}
 
-			.bg-attachment{
-				background-attachment: fixed;
-			}
+		.bg-img{
+			background：opacity:0.6;
+		}	
+
+  			
 	</style>
 
 
@@ -33,16 +47,13 @@
 		
 	</div>-->
 	<header class="header d-flex justify-content-center align-items-center">
-	
 			<div class="text-center text-white">
 
 				
-				<h1>我聽你說logo</h1>
-				<h1>Bootstrap4 切版與 CSS3 小技巧</h1>
-				<h2>大家好，我們是我聽你說</h2>
+				<img class="img-fluid" src=" "alt="">
 
 				<div class="mt-6">
-					<a href="#" class="btn btn-outline-info">Get started</a>
+					<!--<a href="#" class="btn btn-outline-info">Get started</a>-->
 					<!--<a href="#" class="btn btn-outline-secondary">Get started</a>!-->
 				</div>	
 
@@ -59,31 +70,33 @@
 
 		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 		    <ul class="navbar-nav mr-auto">
+
+		      <li class="nav-item">
+		        <a class="nav-link" href="#a">角色介紹</a>
+		      </li>
 		      <li class="nav-item"><!-- active!-->
-		        <a class="nav-link" href="#">關於我們 <span class="sr-only">(current)</span></a>
+		      	
+		        <a class="nav-link" href="#b">關於我們 <span class="sr-only">(current)</span></a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">最新消息</a>
+		        <a class="nav-link" href="#c">最新消息</a>
 		      </li>
 		      <li class="nav-item dropdown">
 		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		          短片欣賞
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="#">有趣短片1</a>
-		          <a class="dropdown-item" href="#">有趣短片2</a>
+		          <a class="dropdown-item" href="#d">有趣短片1</a>
+		          <a class="dropdown-item" href="#e">有趣短片2</a>
 		          <!--<div class="dropdown-divider"></div>!-->
-		          <a class="dropdown-item" href="#">有趣短片3</a>
+		          <a class="dropdown-item" href="#f">有趣短片3</a>
 		        </div>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link " href="#">服務據點</a> <!--disabled!-->
-		      </li>
-		       <li class="nav-item">
-		        <a class="nav-link" href="#">預約諮詢</a>
+		        <a class="nav-link " href="#g">服務據點</a> <!--disabled!-->
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">FB粉絲團</a>
+		        <a class="nav-link" href="#h">粉絲團</a>
 		      </li>
 		    </ul>
 		    <form class="form-inline my-2 my-lg-0">
@@ -93,24 +106,68 @@
 		  </div>
 		</nav>
 
+		<a name="a"></a>
 		<section class="py-5">
 			<div class="container">
-				<h2 class="text-center">關於我們</h2>
-				<p class="text-center">你聽我說你聽我說你聽我說你聽我說你聽我說你聽我說你聽我說</p>
 
-	  			 <div class="row">
-	    			<div class="col-sm-6">
-	     				 <img class="img-fluid" src="https://images.unsplash.com/photo-1527153907022-465ee4752fdc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ed05c707f6cb2dd027a718a8797d02f6&auto=format&fit=crop&w=1000&q=80" alt="">
+					<h2 class="text-center" style="color:#0066CC;">
+						<div style="color:#FFCC33">
+							<i class="fas fa-user-friends"></i>	
+						</div >
+						角色介紹
+					</h2>
+				
+
+	  			 <div class="row  text-center">
+
+			
+	   	 			<div class="col-sm-6" >
+
+						<div class="hover">
+							<img class="img-fluid rounded" src="img/boy.png "alt="">
+						</div>
+
+
+	    				<button type="button" class="btn btn-warning mt-3  text-white" style="color:#;">男主角</button>
+	    	
 	   				 </div>
 
+
+					
 	    			<div class="col-sm-6">
-	      				 <h3>我們在最什麼?</h3>
-	      				 <p>
-	      				 	中央大學大氣科學系兼任副教授吳德榮在「三立準氣象·老大洩天機」專欄說，今西半部白天微熱、高溫達31至33度左右，但今晚至明晨鋒面通過，北台灣、東半部先後轉有局部雨、氣溫降。
+						<img class="img-fluid rounded" src="img/girl.png "alt="">
+						<button type="button" class="btn btn-warning mt-3 text-white">女主角</button>
+	   				 </div>
 
-							吳德榮說，最新(25日20時)歐洲中期預報中心(ECMWF)模式模擬顯示，今各地天氣晴朗，今晚至明晨北台灣、東半部轉有局部雨，但明白天起天氣又好轉；北台灣轉涼、晚微冷，中南部影響小。
 
-							他說，下周日至周一天氣晴朗，北台灣白天舒適至微熱，高溫28、29度，但日夜溫差達12、13度；中南部仍為白天微熱，日夜溫差大的天氣。下周二冷空氣繼續南下，北台灣雲量略增，白天稍涼、早晚微冷；中南部影響小，天氣晴朗，氣溫微幅下降。下周日、一、二這3天的清晨，北台灣沿海空曠地區最低溫約可降至15、16度左右，將創入秋以來最低溫。
+	  			 </div>
+
+	  		</div>				
+		</section>
+
+		<a name="b"></a>
+		<section class="py-5 bg-attachment bg-cover" style="background-image:url(img/people.png)">
+			
+			<div class="container">
+
+	  			 <div class="row">
+	    			<div class="col-sm-6 ">
+	    			
+	     			 
+    				 </div> 
+
+	   				
+
+	    			<div class="col-sm-6" >
+	      				 <h3 style="color:#0066CC;">
+	      				 	
+								<i class="fas fa-users" style="color:#FFCC33"></i>								      				 		
+	      				 	關於你說我聽
+	      				 </h3>
+	      				 <p style="color:#3399CC;">
+	      				 	煩惱十之八九來自於人際關係，最大的問題就是出在「溝通」。只要學會聆聽對方說話替人著想，溝通或人際關係也會有很大的不同。
+	      				 	而我們你聽我說就是為了讓人與人之間有良好的溝通而成立的。
+
 						</p>
 
 	   				 </div>
@@ -118,70 +175,126 @@
 	  		</div>				
 		</section>
 
-
-		<section class="py-5">
+		<a name="c"></a>
+		<section class="py-5 bg-attachment bg-cover" style="background-image:url(img/people.png)">
 			<div class="container">
-				<h2 class="text-center">最新消息</h2>
-				<p class="text-center">你聽我說你聽我說你聽我說你聽我說你聽我說你聽我說你聽我說</p>
-
 	  			 <div class="row">
-	    			<div class="col-sm-6">
-	     				 <img class="img-fluid" src="https://images.unsplash.com/photo-1525422847952-7f91db09a364?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ce6622924dae3b9be067e1778a6b8707&auto=format&fit=crop&w=1365&q=80" alt="">
-	   				 </div>
+	    			
+						<div class="col-sm-6">
+	     				     <img class="img-fluid " src="" alt="">
+	   					 </div>
 
-	    			<div class="col-sm-6">
-	      				 <h3>我們在做什麼?</h3>
-	      				 <p>
-	      				 	中央大學大氣科學系兼任副教授吳德榮在「三立準氣象·老大洩天機」專欄說，今西半部白天微熱、高溫達31至33度左右，但今晚至明晨鋒面通過，北台灣、東半部先後轉有局部雨、氣溫降。
+	   				<div class="col-sm-6">
+	      				 <h3 style="color:#0066CC;">
+	      				 <i class="fas fa-id-card-alt" style="color:#FFCC33"></i>
+	      				 最新消息
+	      				</h3>
+	      				 <p style="color:#3399CC;">
+	      				 	我們預計在 2018 11/5 日愈中國科技大學格致樓1樓展出，展出項目有DM、手冊、海報、網頁、影片等，希望大家都能來參觀，
 
-							吳德榮說，最新(25日20時)歐洲中期預報中心(ECMWF)模式模擬顯示，今各地天氣晴朗，今晚至明晨北台灣、東半部轉有局部雨，但明白天起天氣又好轉；北台灣轉涼、晚微冷，中南部影響小。
-
-							他說，下周日至周一天氣晴朗，北台灣白天舒適至微熱，高溫28、29度，但日夜溫差達12、13度；中南部仍為白天微熱，日夜溫差大的天氣。下周二冷空氣繼續南下，北台灣雲量略增，白天稍涼、早晚微冷；中南部影響小，天氣晴朗，氣溫微幅下降。下周日、一、二這3天的清晨，北台灣沿海空曠地區最低溫約可降至15、16度左右，將創入秋以來最低溫。
 						</p>
-
-	   				 </div>
+					</div>
+	   				 
 	  			 </div>
 	  		</div>				
 		</section>
 
-		<section class="py-5 bg-attachment bg-cover"  style="background-image: url(https://images.unsplash.com/photo-1512929038224-3f62fac1b340?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6c9b6a95a5e2ef6bd7416e734b057bfc&auto=format&fit=crop&w=1429&q=80)">
-			<div class="container text-white">
-				<h2 class="text-center">短片欣賞</h2>
-				<p class="text-center">你聽我說你聽我說你聽我說你聽我說你聽我說你聽我說你聽我說</p>
-				<div class="row " >
-					<div class="col-md-4">
-						<iframe width="360" height="215" src="https://www.youtube.com/embed/XVZS4fl3nfI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-						<p class="text-center">我聽你說我聽你說我聽你說我聽你說</p>						
+		<!--<section class="py-5">
+			<div class="container">
+	  			 <div class="row">
+			    	<div class="col-sm-6 ">
+			     				<div class="ih-item square effect2">
+									<a href="#">
+										<div class="img">
+											 <img  class="img-fluid hover" src="https://images.unsplash.com/photo-1525422847952-7f91db09a364?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ce6622924dae3b9be067e1778a6b8707&auto=format&fit=crop&w=1365&q=80" alt="">
+										</div>
+									</a>
+								</div>
+	   				</div>
+
+	    			<div class="col-sm-6">
+						<img  class="img-fluid" src="https://images.unsplash.com/photo-1525422847952-7f91db09a364?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ce6622924dae3b9be067e1778a6b8707&auto=format&fit=crop&w=1365&q=80" alt="">
+	   				 </div>
+	  			 </div>
+	  		</div>				
+		</section>!-->
+		<!--<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+			      <img class="d-block w-100" src="img/boy.png" alt="First slide">
+			    </div>
+			    <div class="carousel-item">
+			      <img class="d-block w-100" src="img/girl.png" alt="Second slide">
+			    </div>
+			    <div class="carousel-item">
+			      <img class="d-block w-100" src="img/boy.png" alt="Third slide">
+			    </div>
+			  </div>
+			  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+		</div>!-->
+
+
+		<a name="d"></a>
+		<a name="e"></a>
+		<a name="f"></a>
+		<section class="py-5 bg-attachment bg-cover "  style="background-image: url(img/6.png)">
+			<div class="container" style="color:#0066CC;">
+				<h2 class="text-center" >
+				<i class="fas fa-video" style="color:#FFCC33"></i>
+				短片欣賞
+				</h2>
+				<div class="row " style="color:#3399CC;" >
+					<div class="col-md-4 " >
+
+							<iframe width="330" height="215" src="https://www.youtube.com/embed/JDcon7xVr-s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>					
+							<p class="text-center">精彩片頭</p>										
 					</div>
+						
 					<div class="col-md-4">
-						<iframe width="360" height="215" src="https://www.youtube.com/embed/TBSQLC-2Idc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-						<p class="text-center">我聽你說我聽你說我聽你說我聽你說</p>									
+						<iframe width="330" height="215" src="https://www.youtube.com/embed/JDcon7xVr-s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+						<p class="text-center">精彩片頭</p>									
 					</div>
+						
 					<div class="col-md-4">
-						<iframe width="360" height="215" src="https://www.youtube.com/embed/gwxdh4JX9e4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-						<p class="text-center">我聽你說我聽你說我聽你說我聽你說</p>									
+						<iframe width="330" height="215" src="https://www.youtube.com/embed/JDcon7xVr-s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+						<p class="text-center">精彩片頭</p>									
 					</div>
 				</div>
 	  		</div>				
 		</section>
 
+		<a name="g"></a>
+		<section class="pt-5" >
+			<div class=" bg-attachment bg-cover " style="background-image: url(img/5.png);" >
+				<h2 class="text-center pt-5" style="color:#0066CC;">
+				<i class="fas fa-map-marker-alt" style="color:#FFCC33"></i>
+				服務據點
+				</h2>
 
-		<section class="py-5 " >
-			<div class="py-5 ">
-				<h2 class="text-center">服務據點</h2>
-				<p class="text-center">你聽我說你聽我說你聽我說你聽我說你聽我說你聽我說你聽我說</p>
+	  			 <div class=" row bg-attachment bg-cover" >
 
-	  			 <div class=" row bg-attachment bg-cover" style="background-image: url(https://images.unsplash.com/photo-1468276311594-df7cb65d8df6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9c7ebd41ce42bc44af4c1fff64cb39ba&auto=format&fit=crop&w=1650&q=80)">
-
-	    			<div class="col-sm-6  d-flex justify-content-center align-items-center py-4">
-	     				 <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d7230.111853640294!2d121.55930591630548!3d25.03217603589238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x3442abb69bf4c5ad%3A0x246bf4148b7a810d!2zMTEw5Y-w54Gj5Y-w5YyX5biC5L-h576p5Y2A5p2-5Yuk6KGXNTHomZ8!3m2!1d25.032176099999997!2d121.5636833!5e0!3m2!1szh-TW!2stw!4v1540790635409" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+	    			<div class="col-sm-6  d-flex justify-content-center align-items-center py-3">
+	     				 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.0286305559407!2d121.55318064890581!3d24.99914308391005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aa13bbb77bc5%3A0xd5137b43b9a2b64d!2z5Lit5ZyL56eR5oqA5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1541489471677" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
 	   				 </div>
 
-	    			<div class="col-sm-6 py-4">
-	      				 <h3 class="text-white py-5">我們的位置?</h3>
-	      				 <p class="text-white">
-	      				 	中央大學大氣科學系兼任副教授吳德榮在「三立準氣象·老大洩天機」專欄說，今西半部白天微熱、高溫達31至33度左右，但今晚至明晨鋒面通過，北台灣、東半部先後轉有局部雨、氣溫降。 
-						</p>
+	    			<div class="col-sm-6 pt-4">
+	    				<div class="row">
+	    					<div class="col-sm-8" style="color:#3399CC;">
+									<h3 class="py-1">我們的位置</h3>
+					      				 <p class="">
+					      				 	中央大學大氣科學系兼任副教授吳德榮在「三立準氣象·老大洩天機」專欄說，今西半部白天微熱、高溫達31至33度左右，但今晚至明晨鋒面通過，北台灣、東半部先後轉有局部雨、氣溫降。 
+										</p>
+	    					</div>
+	    					<div class="col-sm-4"></div>
+		      				 
+						</div>	
 	   				 </div>
 	  			 </div>
 	  		</div>				
@@ -189,36 +302,62 @@
 
 
 
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
+
+		<a name="h"></a>
+		<section class="" >
+				<h2 class="text-center"></h2>
+				<p class="text-center"></p>
+
+	  			 <div class=" row bg-attachment bg-cover" style="background-color:#3399CC">
+					<div class="container">
+
+						<div class="row py-5">
+			    			<div class="col-sm-4  d-flex justify-content-center align-items-center ">
+			    				<i class="fab fa-facebook fa-5x" style="color:#FFCC33"></i>
+				    				<div class="ml-3 text-center">
+					    				<h4 style="color:#FFCC33">你聽我說</h4>
+					     				<p style="color: white">粉絲專頁</p>
+				     				</div>
+			   				 </div>
+
+			   				 <div class="col-sm-4 d-flex justify-content-center align-items-center ">
+			     				<i class="fab fa-line fa-5x" style="color:#FFCC33"></i>
+									<div class="ml-3 text-center">
+					    				<h4 style="color:#FFCC33">LINE</h4>
+					     				<p style="color: white">官方粉絲團</p>
+				     				</div>
+			   				 </div>
+
+			   				 <div class="col-sm-4 text-center ">
+			      				 <h4 style="color:#FFCC33">你說我聽組員</h4>
+			 
+								<div class="" style="color: white">
+			      					王俊翰 組長策劃人<br>
+			      					劉子倫 酷卡製作人<br>
+			      					陳以加 視覺設計人<br>
+			      					陸信宏 故事發想人<br>
+			      					鄭佳銘 動畫製作人<br>
+			      					涂立宜 網頁工程人<br>	
+			      				</div>
+
+			   				 </div>
+
+			   			</div>	
+					 </div>
+		  			
+	  			</div>				
+		</section>
+
+		 			<section>
+			   			<div class="row" style="height: 80px;">
+			      				<div class="col-sm-12" 	style="background-color:#0066CC ">
+			      					<p class="text-center mt-4" style="color:#003366">© Design by speak_and_hear Team .</p>
+			      				</div>		
+			      		</div>		 
+					</section>
+
+					
+
 
 		<!--<div class="container">
 
